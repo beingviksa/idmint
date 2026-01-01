@@ -1,6 +1,6 @@
 {
   "name": "idmint",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Enterprise-grade, collision-resistant unique ID generator",
   "type": "module",
   "main": "./dist/index.js",
