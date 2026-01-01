@@ -1,9 +1,21 @@
 # idmint
 
+[![npm](https://img.shields.io/npm/v/idmint)](https://www.npmjs.com/package/idmint)
+[![npm](https://img.shields.io/npm/dm/idmint)](https://www.npmjs.com/package/idmint)
+[![license](https://img.shields.io/npm/l/idmint)](LICENSE)
+
 **Simple, secure, and scalable unique ID generator for modern applications**
 
 `idmint` is a lightweight, TypeScript-friendly unique ID generator designed for **high-traffic frontend and backend applications**.  
 It uses **cryptographically secure randomness** to generate **collision-resistant IDs** without any database, server coordination, or external dependency.
+
+## ❤️ Why idmint?
+
+- Most ID libraries silently accept invalid input.
+- In production systems, silent bugs are worse than crashes.
+- idmint fails fast, fails clearly, and fails safely.
+
+idmint focuses on clarity, flexibility, and enterprise readiness while remaining lightweight and easy to use.
 
 ---
 
@@ -91,7 +103,7 @@ idmint.medium();   // 21 characters (default, recommended)
 idmint.long();     // 32 characters
 ```
 
-## Error handling
+## 🚫 Error handling
 
 All public APIs validate input and throw descriptive errors.
 This is intentional to avoid silent failures in production.
@@ -128,10 +140,3 @@ This makes collision probability astronomically low, even with millions or billi
 ## 📄 License
 
 MIT
-
-## ❤️ Why idmint?
-
-- uuid is long and unreadable
-- nanoid is minimal by design
-
-idmint focuses on clarity, flexibility, and enterprise readiness while remaining lightweight and easy to use.
